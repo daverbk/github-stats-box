@@ -19,11 +19,11 @@ jobs:
 
             # - uses: actions/checkout@master
             # - run: npm ci
-            - run: node index.js
+            - run: npm install && node index.js
               env:
                   GH_TOKEN: ${{ secrets.GH_TOKEN }} # Do not edit, defined in secrets
 
                   # Edit the following environment variables
-                  GIST_ID: 06863f60f17afdf067d5dd2d565b10f7 # The ID portion from your gist url
+                  GIST_ID: 89c4cf05bdb1b27e1dd7990b3e27dc8c # The ID portion from your gist url
                   ALL_COMMITS: true # If `true` it will count all commits, if `false` it will count your last year commits
                   K_FORMAT: true # If `true`, large numbers will be formatted with a "k", for example "1.5k"
